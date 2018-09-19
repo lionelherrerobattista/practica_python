@@ -7,7 +7,6 @@ def es_primo(x):
 	
 	if x != 0:
 		for i in range(1, x + 1):
-			print (i)
 			#Busco la cantidad de divisores del numero
 			if x % i == 0:
 				contador_divisores += 1
@@ -19,6 +18,20 @@ def es_primo(x):
 		resultado = False
 		
 	return resultado
+	
+#Otra forma:
+"""
+def is_prime(x):
+  print x
+  if x < 2:
+    return False
+  else:
+    for n in range(2, x-1):
+      if x % n == 0:
+        return False
+    else:
+      return True
+"""
 
 if es_primo(82):
 	print ("Es un numero primo")
