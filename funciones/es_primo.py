@@ -23,9 +23,11 @@ def es_primo(x):
 """
 def is_prime(x):
   print x
+  #Si es menor a 2 es NO es primo
   if x < 2:
     return False
   else:
+	#Si hay otro divisor, dejando afuera a 1 y a sí mismo, NO es primo
     for n in range(2, x-1):
       if x % n == 0:
         return False
